@@ -1,4 +1,11 @@
 defmodule Onfido.Comms.HttpDriver do
+  def request(:delete, path) do
+    path
+    |> api_url()
+    |> HTTPoison.delete(headers(), options())
+    |> decode_json()
+  end
+
   def request(:get, path, params \\ %{}) do
     url_params = params |> URI.encode_query()
 
@@ -19,13 +26,6 @@ defmodule Onfido.Comms.HttpDriver do
     path
     |> api_url()
     |> HTTPoison.put(Poison.encode!(params), headers(), options())
-    |> decode_json()
-  end
-
-  def request(:delete, path) do
-    path
-    |> api_url()
-    |> HTTPoison.delete(headers(), options())
     |> decode_json()
   end
 
