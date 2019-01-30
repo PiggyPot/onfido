@@ -1,11 +1,8 @@
 # Onfido
 
-**TODO: Add description**
+Elixir wrapper for the [Onfido](https://onfido.com) API
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `onfido` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +12,38 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/onfido](https://hexdocs.pm/onfido).
+2. Add configuration to your app:
 
+```elixir
+config :onfido,
+  api_base: "https://api.onfido.com/v2",
+  api_token: "<your-api-token>"
+```
+
+## Documentation
+
+#### Core Resources
+
+[Applicants](https://hexdocs.pm/modulr/Modulr.Resources.Applicant.html)\
+[Documents](https://hexdocs.pm/modulr/Modulr.Resources.Documents.html)\
+[Checks](https://hexdocs.pm/modulr/Modulr.Resources.Check.html)\
+[Reports](https://hexdocs.pm/modulr/Modulr.Resources.Report.html)\
+[Webhooks](https://hexdocs.pm/modulr/Modulr.Resources.Webhook.html)\
+
+#### Other Resources
+
+[Address Picker](https://hexdocs.pm/modulr/Modulr.Resources.AddressPicker.html)\
+[SDK Token Generation](https://hexdocs.pm/modulr/Modulr.Resources.SdkToken.html)\
+[Street Level Code](https://hexdocs.pm/modulr/Modulr.Resources.StreetLevelCode.html)\
+
+You can read the docs [at hex.pm](https://hexdocs.pm/onfido)
+
+## Development Setup
+
+If you are making changes to this codebase and want to test your code, you will need to copy the sample secret file.
+
+```elixir
+cp config/secret.sample.exs config/secret.exs
+```
+
+Then add your relevant Onfido access details here.
