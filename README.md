@@ -28,13 +28,13 @@ config :onfido,
 [Documents](https://hexdocs.pm/modulr/Modulr.Resources.Documents.html)\
 [Checks](https://hexdocs.pm/modulr/Modulr.Resources.Check.html)\
 [Reports](https://hexdocs.pm/modulr/Modulr.Resources.Report.html)\
-[Webhooks](https://hexdocs.pm/modulr/Modulr.Resources.Webhook.html)\
+[Webhooks](https://hexdocs.pm/modulr/Modulr.Resources.Webhook.html)
 
 #### Other Resources
 
 [Address Picker](https://hexdocs.pm/modulr/Modulr.Resources.AddressPicker.html)\
 [SDK Token Generation](https://hexdocs.pm/modulr/Modulr.Resources.SdkToken.html)\
-[Street Level Code](https://hexdocs.pm/modulr/Modulr.Resources.StreetLevelCode.html)\
+[Street Level Code](https://hexdocs.pm/modulr/Modulr.Resources.StreetLevelCode.html)
 
 You can read the docs [at hex.pm](https://hexdocs.pm/onfido)
 
