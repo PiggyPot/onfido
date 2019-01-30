@@ -24,17 +24,17 @@ config :onfido,
 
 #### Core Resources
 
-[Applicants](https://hexdocs.pm/modulr/Modulr.Resources.Applicant.html)\
-[Documents](https://hexdocs.pm/modulr/Modulr.Resources.Documents.html)\
-[Checks](https://hexdocs.pm/modulr/Modulr.Resources.Check.html)\
-[Reports](https://hexdocs.pm/modulr/Modulr.Resources.Report.html)\
-[Webhooks](https://hexdocs.pm/modulr/Modulr.Resources.Webhook.html)
+[Applicants](https://hexdocs.pm/onfido/Onfido.Resources.Applicant.html)\
+[Documents](https://hexdocs.pm/onfido/Onfido.Resources.Documents.html)\
+[Checks](https://hexdocs.pm/onfido/Onfido.Resources.Check.html)\
+[Reports](https://hexdocs.pm/onfido/Onfido.Resources.Report.html)\
+[Webhooks](https://hexdocs.pm/onfido/Onfido.Resources.Webhook.html)
 
 #### Other Resources
 
-[Address Picker](https://hexdocs.pm/modulr/Modulr.Resources.AddressPicker.html)\
-[SDK Token Generation](https://hexdocs.pm/modulr/Modulr.Resources.SdkToken.html)\
-[Street Level Code](https://hexdocs.pm/modulr/Modulr.Resources.StreetLevelCode.html)
+[Address Picker](https://hexdocs.pm/onfido/Onfido.Resources.AddressPicker.html)\
+[SDK Token Generation](https://hexdocs.pm/onfido/Onfido.Resources.SdkToken.html)\
+[Street Level Code](https://hexdocs.pm/onfido/Onfido.Resources.StreetLevelCode.html)
 
 You can read the docs [at hex.pm](https://hexdocs.pm/onfido)
 
