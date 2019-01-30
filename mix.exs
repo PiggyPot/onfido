@@ -4,6 +4,8 @@ defmodule Onfido.MixProject do
   def project do
     [
       app: :onfido,
+      description: "Elixir wrapper for the Onfido API",
+      package: package(),
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
@@ -24,6 +26,14 @@ defmodule Onfido.MixProject do
       {:ex_doc, "~> 0.19.0", only: :dev, runtime: false},
       {:httpoison, "~> 1.0"},
       {:poison, "~> 3.1"}
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["overture8"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/PiggyPot/onfido"}
     ]
   end
 end
