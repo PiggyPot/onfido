@@ -16,16 +16,20 @@ defmodule Onfido.Comms.HttpDriver do
   end
 
   def request(:post, path, params) do
+    {:ok, payload} = FormData.create(params, :url_encoded)
+
     path
     |> api_url()
-    |> HTTPoison.post(Poison.encode!(params), headers(), options())
+    |> HTTPoison.post(payload, headers(), options())
     |> decode_json()
   end
 
   def request(:put, path, params) do
+    {:ok, payload} = FormData.create(params, :url_encoded)
+
     path
     |> api_url()
-    |> HTTPoison.put(Poison.encode!(params), headers(), options())
+    |> HTTPoison.put(payload, headers(), options())
     |> decode_json()
   end
 

@@ -7,7 +7,7 @@ Elixir wrapper for the [Onfido](https://onfido.com) API
 ```elixir
 def deps do
   [
-    {:onfido, "~> 0.1.0"}
+    {:onfido, "~> 0.2.0"}
   ]
 end
 ```
